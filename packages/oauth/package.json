@@ -32,6 +32,7 @@
 		".": "./index.js",
 		"./github": "./github.js",
 		"./google": "./google.js",
+		"./oidc": "./oidc.js",
 		"./patreon": "./patreon.js",
 		"./reddit": "./reddit.js",
 		"./twitch": "./twitch.js"
@@ -43,6 +44,9 @@
 			],
 			"google": [
 				"google.d.ts"
+			],
+			"oidc": [
+				"oidc.d.ts"
 			],
 			"patreon": [
 				"patreon.d.ts"
@@ -61,5 +65,8 @@
 	},
 	"peerDependencies": {
 		"lucia-auth": "0.5.x - 0.6.x"
+	},
+	"dependencies": {
+		"openid-client": "^5.4.0"
 	}
 }
